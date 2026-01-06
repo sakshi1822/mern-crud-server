@@ -25,3 +25,10 @@ mongoose
     });
   })
   .catch((error) => console.log(error));
+
+app.use(
+  cors({
+    origin: ["https://mern-crud-client-tsyy.vercel.app/"],
+    credentials: true,
+  })
+);
